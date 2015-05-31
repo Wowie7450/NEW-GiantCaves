@@ -1,0 +1,17 @@
+# By default, Giant Caves only spawn in worlds created by a world manager like Multiverse or My Worlds.
+#
+# If you want to use Giant Caves as a stand-alone plugin, set onlyUseWorldManagers to false and edit
+# the worlds list below.
+
+onlyUseWorldManagers: true
+
+# The worlds list below is only used when onlyUseWorldManagers is set to false
+
+worlds:
+    - name   : world       # The name of a world to apply giant caves
+      sxz    : 200         # Horizontal stretch (larger number = wider cave)
+      sy     : 100         # Vertical stretch (larger number = taller cave)
+      cutoff : 62          # Minimum Perlin density cutoff (-100 to 100)
+      miny   : 6           # Lower bound of cave zone
+      maxy   : 50          # Uppoer bound of cave zone
+      debug  : false       # Turns on invert mode for experimenting with config values (true/false)
